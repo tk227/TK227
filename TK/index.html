@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tower of Hanoi Visualizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <h1>TOWER OF HANOI VISUALIZER </h1>
+        <div class="game-controls">
+            <label for="disk-input">Number of Disks:</label>
+            <input type="number" id="disk-input" min="1" max="8" value="3">
+            <button class="btn" onclick="startGame()">Start</button>
+            <button class="btn" onclick="stopGame()">Stop</button>
+            <button class="btn" onclick="resetGame()">Reset</button>
+        </div>
+        <div class="speed">
+            <p>Speed</p>
+            <input type="range" id="speedRange" step="1" max="100" value="100">
+          </div>
+        <div id="towers" class="towers-container">
+            <div class="tower" id="tower1">
+                <div class="peg">Tower 1</div>
+            </div>
+            <div class="tower" id="tower2">
+                <div class="peg">Tower 2</div>
+            </div>
+            <div class="tower" id="tower3">
+                <div class="peg">Tower 3</div>
+            </div>
+        </div>
+       
+
+        <div id="steps">
+            <h2>Steps:</h2>
+            <ul id="step-list"></ul>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
